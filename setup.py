@@ -1,32 +1,58 @@
+# -*- coding: utf-8 -*-
+#Copyright (c) 2019 Biar Fordlander
+#
+#Permission is hereby granted, free of charge, to any person obtaining a copy
+#of this software and associated documentation files (the "Software"), to deal
+#in the Software without restriction, including without limitation the rights
+#to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+#copies of the Software, and to permit persons to whom the Software is
+#furnished to do so, subject to the following conditions:
+#
+#The above copyright notice and this permission notice shall be included in all
+#copies or substantial portions of the Software.
+#
+#THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+#IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+#FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+#AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+#LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+#OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+#SOFTWARE.
+
 from setuptools import setup, find_packages
 
 setup(
-	name='SmartLogin',  # 项目名称
-	version='1.0.1',  # 项目版本
-	url='https://github.com/EchoShoot/SmartLogin',  # 网址
-	description='Web General Login Module',  # 简要描述
-	author='EchoShoot',  # 作者
-	maintainer='BiarFordlander',  # 维护人
-	maintainer_email='BiarFordlander@gmail.com',  # 维护人的邮箱
-	license='GPL',  # BSD 的自由权太大了,换 GPL 免得人家拿我模块去 "商用"!
-	zip_safe=False,  # 有些工具不支持zip压缩，而且压缩后也不方便调试，建议设为 False!
-	python_requires='>=3.6',  # 支持的 Py 版本
-	packages=find_packages('src'),  # 包含所有src中的包
-	package_dir = {'':'src'},  # 告诉distutils包都在src下
+	name='smartlogin',
+	version='0.0.1',
+	url='https://github.com/EchoShoot/SmartLogin',
+	description='Web General Login Module',
+	author='EchoShoot',
+	author_email='BiarFordlander@gmail.com',
+	license='MIT',
+	packages=find_packages('src'),
+	package_dir = {'':'src'},
 	include_package_data=True,
-	# 包含 SmartLogin 项目下 resouces 文件夹里面 所有的文件!
+	zip_safe=False,
 	entry_points={
 		'console_scripts': ['smartlogin = SmartLogin.command:launch']
 	},
-	install_requires = [
-		'selenium>=3.9.0',
-	],  # 模块所依赖的模块包
+	python_requires='>=3.4',
 	classifiers=[
-		'Module :: SmartLogin',
-		'Environment :: Console',
+		'Development Status :: 2 - Pre-Alpha',
 		'Intended Audience :: Developers',
-		'License :: OSI Approved :: GPL License',
+		'License :: OSI Approved :: MIT License',
+		'Natural Language :: Chinese (Simplified)',
+		"Operating System :: MacOS :: MacOS X",
 		'Programming Language :: Python',
-		'Programming Language :: Python :: 3.6',
+		"Programming Language :: Python :: 3",
+		"Programming Language :: Python :: 3.4",
+		"Programming Language :: Python :: 3.5",
+		"Programming Language :: Python :: 3.6",
+		"Programming Language :: Python :: 3.7",
+		"Programming Language :: Python :: Implementation :: CPython",
+		"Programming Language :: Python :: Implementation :: PyPy",
+	],
+	install_requires = [
+			'selenium>=3.9.0',
 	],
 )

@@ -1,1 +1,7 @@
 recursive-include src/SmartLogin/resource *
+
+include LICENSE
+
+global-exclude __pycache__ *.py[cod]
+global-exclude *.so *.dylib
+

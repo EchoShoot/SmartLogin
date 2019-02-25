@@ -15,6 +15,11 @@ from SmartLogin import finder
 
 logger = logging.getLogger(__name__)
 
+__all__ = (
+    'execute_with_jquery',
+    'until_login_page_switch',
+)
+
 
 # logger.disabled = True
 

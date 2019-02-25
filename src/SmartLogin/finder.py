@@ -9,6 +9,15 @@
 import logging
 from SmartLogin import Errors
 
+__all__ = (
+    'smart_get',
+    'auto_switch_to_LoginForm',
+    'fill_username_and_password',
+    'get_username_input',
+    'get_password_input',
+    'get_frames',
+)
+
 logger = logging.getLogger(__name__)
 
 
