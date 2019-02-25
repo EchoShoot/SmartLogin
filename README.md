@@ -1,4 +1,8 @@
 # SmartLogin
+![PyPI](https://img.shields.io/pypi/v/smartlogin.svg)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/smartlogin.svg)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/smartlogin.svg)
+
 Web general login module which based on Selenium
 
 ## Feature

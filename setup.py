@@ -26,6 +26,7 @@ setup(
 	version='0.0.1',
 	url='https://github.com/EchoShoot/SmartLogin',
 	description='Web General Login Module',
+	long_description=open('README.md').read(),
 	author='EchoShoot',
 	author_email='BiarFordlander@gmail.com',
 	license='MIT',
