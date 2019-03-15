@@ -15,3 +15,18 @@ Web general login module which based on Selenium
 ```shell
 $ pip install smartlogin
 ```
+
+## Example
+```python
+from SmartLogin import Login
+login = Login.Login(login_url='http://xxx.com', target_page='http://ooo.com')
+login.auto_login(username, password, xpath_click='//a[@id="switcher_plogin"]')  
+# If you don't need to click button before logging in, you can set `xpath_click` to None.)
+```
+
+## Other API
+```python
+from SmartLogin import finder,monitor
+help(finder)  # It can help you find the login form.
+help(monitor)  # It can help you listen to page jumps and inject Jquery.
+```
