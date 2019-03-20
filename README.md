@@ -30,3 +30,6 @@ from SmartLogin import finder,monitor
 help(finder)  # It can help you find the login form.
 help(monitor)  # It can help you listen to page jumps and inject Jquery.
 ```
+
+## Future Plan
+I have noticed Selenium is block widely by E-commerce websites, in next version, i plan to use Puppeteer to improve this API, by that time it may combine with Requests-html which develop by kennethreitz. that would be incomparably convenient, please stay hungry, my friends!
